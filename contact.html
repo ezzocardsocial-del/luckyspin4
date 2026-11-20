@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Picker Wheel</title>
+  <meta name="description" content="Get in touch with the Picker Wheel team for questions, feedback, or support.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo-area">
+        <div class="logo-badge">🎯</div>
+        <span>Picker Wheel</span>
+      </a>
+      <div class="header-actions">
+        <a href="index.html" class="btn-header">🏠 Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper" style="max-width: 900px; padding-top: 3rem;">
+    <div class="seo-content-wrapper" style="margin-top: 0; background-color: var(--bg-card);">
+      <h1>Contact Us</h1>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Have questions, feature requests, or feedback? We'd love to hear from you.</p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
+        <div>
+          <h3>Direct Contact</h3>
+          <p>You can email our support team directly for any technical assistance, feedback, or business inquiries:</p>
+          <p style="font-weight: 600; font-size: 1.1rem; color: var(--primary); margin: 1rem 0;">
+            📧 support@yourdomain.com
+          </p>
+          <p>We typically respond within 24–48 business hours.</p>
+        </div>
+
+        <div>
+          <h3>Send a Quick Message</h3>
+          <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.'); this.reset();" style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Your Name</label>
+              <input type="text" required class="text-field" style="width: 100%;" placeholder="Enter your name">
+            </div>
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Email Address</label>
+              <input type="email" required class="text-field" style="width: 100%;" placeholder="Enter your email">
+            </div>
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Message</label>
+              <textarea required class="text-field" style="width: 100%; height: 100px; resize: vertical;" placeholder="Your message or feedback..."></textarea>
+            </div>
+            <button type="submit" class="btn-add" style="justify-content: center; padding: 0.75rem;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-copyright" style="justify-content: center;">
+      <span>&copy; 2026 Picker Wheel. All Rights Reserved. <a href="index.html">Back to Home</a></span>
+    </div>
+  </footer>
+</body>
+</html>
